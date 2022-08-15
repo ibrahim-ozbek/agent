@@ -11,7 +11,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t eaglehaslanded/agentless:latest .'
+				sh 'docker build -t eaglehaslanded/agentless:son .'
 			}
 		}
 
@@ -25,7 +25,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push eaglehaslanded/agentless:latest'
+				sh 'docker push eaglehaslanded/agentless:son'
 			}
 		}
 	}
